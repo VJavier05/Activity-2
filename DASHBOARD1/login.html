@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDO 1</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="register-box">
+            <h2>Login</h2>  
+            <!-- PHP dynamic content will be inserted here -->
+            {{dynamic_content}}
+            <form action="login.php" method="POST">
+                <div class="full-width">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="full-width">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit login_btn">Login</button>
+            </form>
+            <a href="register_form.php">Don't Have an Account?</a>
+        </div>
+    </div>
+</body>
+</html>
